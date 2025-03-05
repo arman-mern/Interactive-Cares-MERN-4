@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 body{
-  background-color: gray;
-  height: 300vh;
+  background-color: white;
 }
 
+
+/* HEADER AREA START */
 .header-area{
   width: 100%;
   background-color: white;
@@ -56,7 +57,23 @@ body{
   padding-right: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  
+.header-logo{
+  width: 90%;
 
+}
+.header-menu{
+  display: none;
+}
+.header-search{
+  width: 10%;
+}
+}
+
+/* HEADER AREA END */
+
+/* HERO AREA START */
 .hero-area{
   background-color: #F9F8F9;
   width: 100%;
@@ -107,6 +124,18 @@ body{
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+
+  .hero-company{
+    display: none;
+  }
+}
+/* HERO AREA END */
+
+
+
+
+/* SERVICE AREA START */
 .service-area{
   width: 100%;
   background-color: #F2FCFF;
@@ -154,7 +183,32 @@ body{
   font-size: 14px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+@media screen and (max-width: 600px) {
 
+  .service{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .service-content{
+    width: 100%;
+  }
+
+  .service-categories{
+    width: 100%;
+    display: block;
+  }
+  .service-box{
+    margin-bottom: 20px;
+  }
+}
+/* SERVICE AREA END */
+
+
+
+/* COUNTER AREA START */
 .counter-area{
   width: 100%;
   background-image: url('./img/BG.png');
@@ -201,6 +255,25 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 600px) {
+  
+.counter-body{
+  display: block;
+}
+.counter-item{
+  width: 100%;
+}
+
+.counter-side-border{
+  border:none;
+  margin: 30px 0px;
+}
+}
+/* COUNTER AREA END */
+
+
+
+/* TESTIMONIAL AREA START */
 .testimonial-area{
   width: 100%;
   background-color: #F4FBFF;
@@ -223,7 +296,6 @@ body{
 }
 .testimonial-item{
   width: 50%;
-
 }
 .testimonial-item h5{
   font-size: 18px;
@@ -257,6 +329,22 @@ body{
   margin: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  
+.testimonial-body{
+  display: block;
+}
+.testimonial-item{
+  width: 100%;
+}
+}
+/* TESTIMONIAL AREA END */
+
+
+
+
+
+/* FAQ AREA START */
 .faq-area{
   width: 100%;
   background-color: white;
@@ -297,13 +385,32 @@ body{
 .faq-image{
   width: 40%;
   height: 400px;
-  background-image: url('./img/Group\ 30.png');
+  background-image: url('./img/Group\ 30\ 123.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0px 0px 0px 50px;
 }
 
+@media screen and (max-width: 600px) {
+  
+.faq{
+  display: block;
+}
+.faq-content{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.faq-image{
+  width: 100%;
+  border-radius: 0px;
+}
+}
+/* FAQ AREA END */
+
+
+
+/* FOOTER AREA START */
 .footer-top{
   width: 100%;
   background-color: #0F6E8C;
@@ -389,4 +496,30 @@ body{
 .bottom-right a:hover{
   background-color: white;
   color: #0F6E8C;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-logo{
+    margin-bottom: 40px;
+  }
+  .footer1{
+    display: block;
+  
+  }
+  .footer-item{
+    width: 100%;
+  }
+
+.footer2{
+  display: block;
+  text-align: center;
+}
+.bottom-left{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bottom-right{
+  justify-content: center;
+  width: 100%;
+}
 }
